@@ -1,9 +1,6 @@
 import { UsernamePasswordInput } from "src/resolvers/UsernamePasswordInput";
 
 export const validateRegister = (options: UsernamePasswordInput) => {
-  console.log(options);
-  console.log(options.email);
-  console.log(options.email.includes("@"));
   if (!options.email.includes("@")) {
     return [
       {
